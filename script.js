@@ -30,10 +30,8 @@ checkBoxesList.forEach((checkBox) => {
             errorClass.style.display = 'none'
 
             const isInputFieldsFilled = [...inputValues].reduce((acc, curr) => {
-                // debugger;
                 return acc + (curr.value ? 1 : 0);
             }, 0)
-            // debugger;
             progressBarValue.innerText = isInputFieldsFilled;
             // progressBarValue.innerText = value;
             progressBar.style.width = isInputFieldsFilled === 3
@@ -42,7 +40,6 @@ checkBoxesList.forEach((checkBox) => {
                     isInputFieldsFilled === 1 ? "33.33%" :
                         "0%";
 
-            // debugger;
         } else {
             errorClass.style.display = 'block'
         }
