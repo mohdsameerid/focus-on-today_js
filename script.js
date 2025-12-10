@@ -13,12 +13,8 @@ progressBar.style.width = value === 3
         value === 1 ? "33.33%" :
             "0%";
 
-console.log(checkBoxesList);
-
 checkBoxesList.forEach((checkBox) => {
     checkBox.addEventListener('click', (e) => {
-
-        console.log(e.target.value);
 
         const isInputFieldsFilled = [...inputValues].every((item) => {
             return item.value;
